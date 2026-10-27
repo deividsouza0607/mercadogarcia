@@ -1,0 +1,19 @@
+MERCADO GARCIA — SITE DE UMA PÁGINA
+
+Arquivos:
+- index.html: estrutura da página
+- style.css: identidade visual e responsividade
+- script.js: menu mobile, animação das ofertas e ano automático
+- assets/logo-mercado-garcia.png: logo enviada
+- assets/video-poster.svg: capa provisória do vídeo
+
+PARA ADICIONAR O VÍDEO:
+1. Copie o vídeo de drone para a pasta assets.
+2. Renomeie para video-mercado.mp4.
+3. Mantenha a pasta assets junto com os demais arquivos.
+
+ANTES DE PUBLICAR:
+- Substitua os produtos e preços ilustrativos pelas ofertas reais.
+- Adicione os links oficiais do Instagram e Facebook do Mercado Garcia.
+- Confirme os horários de atendimento, especialmente em feriados.
+- O endereço e telefone foram transcritos da imagem fornecida.

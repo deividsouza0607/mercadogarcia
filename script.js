@@ -1,0 +1,11 @@
+const menuToggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');menuToggle.textContent=open?'✕':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Abrir menu');menuToggle.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const track=document.getElementById('offer-track');const pause=document.getElementById('pause-offers');
+[...track.children].forEach(card=>{const clone=card.cloneNode(true);clone.setAttribute('aria-hidden','true');track.appendChild(clone);});
+pause.addEventListener('click',()=>{const stopped=track.classList.toggle('paused');pause.textContent=stopped?'▶':'Ⅱ';pause.setAttribute('aria-label',stopped?'Retomar ofertas':'Pausar ofertas');pause.title=stopped?'Retomar ofertas':'Pausar ofertas';});
+const video=document.getElementById('market-video');const placeholder=document.getElementById('video-placeholder');
+video.addEventListener('loadeddata',()=>placeholder.hidden=true);
+video.addEventListener('error',()=>placeholder.hidden=false);
